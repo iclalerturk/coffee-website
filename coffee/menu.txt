@@ -1,0 +1,9 @@
+Filter coffee
+Americano
+Latte
+Mocha
+Cappuccino
+Espresso
+Flat white
+Caramel machiato
+Turkish coffee

@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Yatay taşmayı gizlemek için */
+}
+
+header {
+    background-color: #5c574a;
+    color: #402e09;
+    padding: 20px 30px;
+    img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 30px;
+    }
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+header h1 a {
+    color: #402e09;
+    text-decoration: none;
+    margin-bottom: 1px;
+    padding-right: 20px;
+}
+
+header h1:hover {
+    color: #2d261d;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #402e09;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #2d261d;
+}
+main {
+    color: #b3ab9b;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: calc(100% - 80px);
+}
+
+.section {
+    min-width: 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+}
+.homeImg{
+    display: flex;
+    
+    justify-content: space-between;
+    gap: 10px; /* Resimler arasındaki boşluk */
+}
+ #kd{
+    height: 350px;
+    width: 33%;
+    border: 1px solid #46330f;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    margin: 0 40px 0 0;
+} 
+#kd:hover {
+    transform: scale(1.03);
+}
+
+#about p{
+    color: #402e09;
+    margin: 0 40px 0 0;
+    background-color: hsl(40, 14%, 65%, 0.7);
+    border: 1px solid #b38c45;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease;
+}
+#about p:hover {
+    transform: scale(1.03);
+}
+
+section {
+    margin-bottom: 20px;
+    background-image: url("arka.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact a{
+    text-decoration: none;
+    color: #5d574d;
+}
+ 
+#menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 40px 0 0 ;
+}
+
+#menu-list li {
+    color: #402e09;
+    list-style-type: none;
+    background-color: hsl(40, 14%, 65%, 0.7);
+    border: 1px solid #b38c45;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    transition: transform 0.2s ease;
+}
+
+#menu-list li:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    display: flex;
+    background-color: hsl(43, 11%, 33%);
+    color: #402e09;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: left;
+}
+
+footer p {
+    margin: 25px 5px;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    margin-left: 10px;
+    width: 40px;
+    height: auto; 
+}
